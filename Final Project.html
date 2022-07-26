@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Inspiration</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+      }
+      h1 {
+        text-align: center;
+        font-size: 30px;
+        padding: 30px;
+        margin: 0;
+      }
+      h2 {
+        text-align: center;
+        font-size: 26px;
+        padding: 10px 20px;
+        margin: 0;
+      }
+      h3 {
+        text-align: center;
+        font-size: 30px;
+      }
+      h4 {
+        text-align: center;
+        padding:20px 0px 0px;
+      }
+      p {
+        text-align: center;
+       max-width: 500px;
+        margin: 0 auto;
+        line-height: 1.5;
+        font-size: 18px;
+      }
+      .logoimage {
+        display: block;
+        margin: 0 auto;
+        border-radius: 4px;
+        width: 600px;
+      }
+      .image2 {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+        padding: 30px 5px;
+      }
+      .pagecontent{
+        line-height: 1.5;
+        width: 550px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color:#EDEDED ;
+     border-radius:20px;
+     box-shadow: 3px 2px 3px grey ;
+       
+      }
+      .container{
+        background-image: linear-gradient(to top,#B1BED5 10%, #BFD8D5, #E5EEFA 85%);
+        border-radius: 5px;
+        max-width:700px;
+        margin:0 auto;
+        padding:30px ;
+      }
+      hr {
+        display: block;
+        border-style: inset;
+        border-width: 1px;
+        
+      }
+      ul, li {
+        text-align: center;
+        font-size: 14px;
+        list-style:none;
+      }
+      
+      button {
+        display: block;
+        margin: 0 auto;
+        background:#03506f;
+        color: white;
+        border-radius: 4px;
+        font-size:14px;
+        box-shadow:2px 2px 5px grey;
+        transition: all 200ms ease-in-out;
+        padding:10px 20px;
+        text-transform:uppercase;
+        border:none;
+      }
+      button:hover{
+        cursor:pointer;
+        background:#0a043c;
+        color: white;
+      }
+      strong {
+        font-size: 20px;
+       text-align:center;
+       display:block;
+      }
+      em {
+        font-size:13px;
+      }
+    
+    </style>
+    <div class="container">
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/818/original/5d407f82125641dd8e30f185c2b54e9c.png?1635264197"
+      alt="Logo"
+      class="logoimage"
+    />
+    <h1>About Us</h1>
+    <p>
+      We are on a mission to bring about immediate and long lasting positive
+      change in the lives of disadvantaged children in Bolivia.
+    </p>
+    <a href="https://bemyinspiration.aweb.page/" target="_blank">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/812/original/2a2170bf92c643aa80179a46cc3698d0.jpeg?1635259095"
+        alt="Kids of Sucre"
+        class="image2"
+      />
+    </a>
+    
+    <br />
+    <h2>
+      Everything we do supports children today and invests in their happier and
+      healthier tomorrow
+    </h2>
+    <br />
+    <div class="pagecontent">
+      <ul>
+        <li><strong> Education 🏛 </strong> </li>    <br />
+       We believe that Education is the single most powerful tool in combating
+        inequality and socioeconomic challenges 
+        <br />
+        <br />
+        <li>
+          <strong> Nutrition 🍝 </strong>
+          <br />
+        </li>
+        Each month we help by providing essential nutritional & hygienic 
+        products
+      </ul>
+    </div>
+    <br /> <br />
+    <hr />
+    <h3>Newsletter</h3>
+    <strong> Sign up to receive our monthly specials in your inbox: </strong>
+    <br /> <br />
+    <p>
+      ➤ Exclusive highlights from our initiatives   <br />
+      ➤  New campaigns and project announcements   <br />
+      ➤ Volunteering opportunities and more !  <br /> 
+    </p>
+
+    <br /> <br />
+    <button>Sign up</button>
+    <br />
+    <hr />
+    <h4>
+      Are you interested in finding out more information about us or how to get
+      involved ?
+    </h4>
+    <p>
+    <a href="mailto:bemyinspiration.uk@gmail.com" target="_blank">Contact us </a> 📩</p>
+      <br />  <br />
+    <p> <em>Coded by Viktoria Nikolova</em></p>
+    </div>
+  </head>
+  <script>
+function signUP () {
+let fullname= prompt ("What is your full name ?");
+let sure= prompt ("Are you sure you want to receive the newsletter?");
+let email= prompt ("What is your email address?");
+sure=sure.trim();
+sure=sure.toLowerCase();
+if (sure ==="Yes" || sure === "yes") {
+  alert ("Thanks, " + fullname + " - keep your eyes peeled for the next newsletter in your inbox. Don't forget to check the spam folder!"); 
+} else {
+  alert ("You can always sign up later, don't forget you can keep up to date with what are doing by visitng our social media page");
+}
+}
+
+let button=document.querySelector("button");
+button.addEventListener("click", signUP);
+  </script>
+  </body>
+</html>
